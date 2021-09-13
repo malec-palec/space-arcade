@@ -11,7 +11,7 @@ export function create(x, y, w, h, i, sector) {
     origin = { x: x + bounds.w / 2, y: y + bounds.h / 2 };
 
   function update(terrain) {
-    vy = chance(25) ? 1 : 0;
+    vy = chance(25) ? (chance(75) ? 1 : 2) : 0;
 
     vx = chance(0.5) ? dir : 0;
     if (chance(0.1)) dir *= -1;

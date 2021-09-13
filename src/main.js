@@ -66,7 +66,7 @@ function spawnEnemy() {
     spawnPos = director.getSpawnPos();
   let invader = createInvader(
     spawnPos.x,
-    Math.round(Math.random() * (enemyModelHeight * 2) * 2),
+    Math.round(Math.random() * 64),
     3, enemyModelHeight,
     Math.floor(Math.random() * 32768),
     spawnPos.sector);
@@ -264,8 +264,6 @@ function createDirector(numSectors, sectorCapacity) {
 
     sectors[sectorIndex]++;
     totalCount++;
-
-    console.log(totalCount);
 
     return {
       x: sectorIndex * secWidth + Math.round(Math.random() * secWidth),
