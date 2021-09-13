@@ -1,0 +1,20 @@
+{
+  "name": "space-arcade",
+  "version": "1.0.0",
+  "description": "js13k game contest entry",
+  "private": true,
+  "scripts": {
+    "build": "rollup -c",
+    "start": "start npm run build -- -w"
+  },
+  "keywords": [],
+  "author": "malec-palec",
+  "license": "MIT",
+  "devDependencies": {
+    "ejs": "^3.1.6",
+    "html-minifier": "^4.0.0",
+    "rollup": "^2.56.3",
+    "rollup-plugin-terser": "^7.0.2"
+  },
+  "type": "module"
+}
